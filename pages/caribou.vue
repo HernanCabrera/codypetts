@@ -1,6 +1,7 @@
 <template>
   <div class="caribou">
     <section class="home">
+      <div class="img"></div>
     </section>
     <section class="main-content mx-3 mx-md-5 px-lg-5">
       <b-container fluid class="px-4 px-lg-5">
@@ -122,144 +123,11 @@ export default {
 </script>
 
 <style lang="scss">
-:root {
-  --fondo: #fefefe;
-  --primary: #333333;
-  --secondary: #BB8868;
-}
 .caribou {
   .home {
-    // transform: scale(1.1);
-    height: 100vh;
-    background-image: url(~/static/caribou/caribou-hero.jpg);
-    background-repeat: none;
-    background-position: center center;
-    background-size: cover;
-  }
-  .main-content {
-    padding-top: 120px; 
-    z-index: 2;
-    position: relative;
-    top: -17vh;
-    background-color: var(--fondo);
-    .title {
-      font-family: 'Exo', sans-serif;
-      color: var(--primary);
-    }
-    .copy {
-      font-size: 1em;
-      letter-spacing: 0.5px;
-      line-height: 1.8em;
-      font-weight: 400;
-      font-family: "Crimson Text", serif;
-      // color: var(--primary);
-    }
-    .proyect-1 {
-      .title {
-        font-family: 'Exo', sans-serif;
-        font-size: 3.5em;
-        letter-spacing: 3px;
-        color: var(--primary);
-      }
-      .content-left {
-        .used-skills {
-          color: var(--secondary);
-          letter-spacing: 0.5px;
-          font-family: "Crimson Text", serif;
-        }
-      }
-      .content-right {
-        .credits {
-          font-family: 'Exo', sans-serif;
-          color: var(--secondary);
-          font-size: 1em;
-          letter-spacing: 1.75px;
-        }
-        .people {
-          font-family: 'Crimson Text', serif;
-          color: var(--primary);
-          font-size: 1em;
-          letter-spacing: 1px;
-          line-height: 1.825em;
-        }
-      }
-    }
-    .proyect-2, .proyect-3 {
-      .title {
-        font-size: 1.8em;
-        letter-spacing: 2.5px;
-      }
-    }
-    .testimonial {
-      .title {
-        color: var(--secondary);
-        font-size: 1.25em;
-        letter-spacing: 3px;
-      }
-      .text {
-        font-size: 1.5em;
-        font-family: 'Crimson Text', serif;
-        color: var(--primary);
-        letter-spacing: 0.05em;
-        line-height: 2em;
-        .resaltado {
-          color: var(--secondary);
-        }
-      }
-      .author {
-        color: var(--secondary);
-        font-size: 1.125em;
-        letter-spacing: 3px;
-        margin: 50px 0 20px;
-      }
-      .profession {
-        color: var(--secondary);
-        font-size: 15px;
-        font-family: 'Crimson Text', serif;
-        font-style: italic;
-        display: block;
-        font-weight: bold;
-      }
-    }
-  }
-  .img-fluid {
-    width: 100%;
-    height: 100%;
-  }
-  .line {
-    background-color: var(--secondary);
-    position: absolute;
-    top: 42px;
-  }
-  .vertical-line {
-    height: 50px;
-    width: 1px;
-  }
-  .horizontal-line {
-    height: 1px;
-    width: 50px;
-    top: 0;
-  }
-  .center-x-v {
-    right: 50%;
-  }
-  .center-x-h {
-    right: calc(50% - 25px);
-  }
-  .copy-link {
-    color: var(--secondary);
-  }
-}
-
-
-@media (max-width: 770px) {
-  .cocktail {
-    .main-content {
-      .title {
-        font-size: 2.5em;
-      }
+    .img {
+      background-image: url(~/static/caribou/caribou-hero.jpg);
     }
   }
 }
-
 </style>

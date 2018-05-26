@@ -3,7 +3,7 @@ module.exports = {
     'bootstrap-vue/nuxt',
 
     // Or if you have custom bootstrap CSS...
-    ['bootstrap-vue/nuxt', { css: false }],
+    ['bootstrap-vue/nuxt', { css: false }]
   ],
 
   /*
@@ -21,6 +21,9 @@ module.exports = {
       { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Crimson+Text:400,400i,700|Exo:400,500,600,700,800,900' }
     ]
   },
+  css: [
+    '~/assets/main.scss'
+  ],
   /*
   ** Customize the progress bar color
   */
