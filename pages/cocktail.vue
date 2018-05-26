@@ -55,7 +55,7 @@
             <div class="line horizontal-line"></div>
           </b-col>
           <b-col cols="12 my-4" md="6">
-            <h2 class="title">New Age, Old Fashioned.</h2>
+            <h2 class="title py-3">New Age, Old Fashioned.</h2>
             <p class="copy">Each kit is inspired by a classic cocktail that evokes nostalgia, such as the Old Fashioned, the Dirty Martini, the Absinthe Louche, and so on. So what's included in the kit? Well, each cocktail kit supplies you with all the essential / natural ingredients to craft classic cocktails, just add your favorite alcoholic spirt and enjoy!</p>
           </b-col>
           <b-col cols="0" md="6" class="d-none d-md-flex justify-content-center align-items-center">
@@ -99,7 +99,7 @@
             <div class="line horizontal-line"></div>
           </b-col>
           <b-col cols="12 my-4" md="6">
-            <h2 class="title">Cheers Friends.</h2>
+            <h2 class="title py-3">Cheers Friends.</h2>
             <p class="copy">No happy hour is complete without good friends. I'd like to thank a few of my talented friends that were a part of Cocktail kits; Colin Schye for his extensive web skills, Kelley Mann and Brent Schoepf for their photography prowess, the team at Studio on Fire for their printing expertise, and Justin Durling for his dedication to great work, and for this awesome opportunity.</p>
           </b-col>
           <b-col cols="0" md="6" class="d-none d-md-flex justify-content-center align-items-center">
@@ -119,9 +119,7 @@
           <b-col cols="12 text-center">
             <h3 class="title">TESTIMONIAL</h3>
             <p class="text my-3 px-lg-5 mx-lg-5">
-              <span class="resaltado">“</span>
-                Cody did an outstanding job designing a visual identity for Cocktail Kits 2 Go. He combined my product idea with his own imagination and skill to create a brand that truly expresses my company. I couldn’t be happier with his work
-              <span class="resaltado">”</span>
+              <span class="resaltado">“</span>Cody did an outstanding job designing a visual identity for Cocktail Kits 2 Go. He combined my product idea with his own imagination and skill to create a brand that truly expresses my company. I couldn’t be happier with his work<span class="resaltado">”</span>
               </p>
             <h4 class="author">JUSTIN DURLING</h4>
             <h5 class="profession">CEO - Cocktail Kits 2 Go</h5>
@@ -166,6 +164,14 @@ export default {
       font-family: 'Exo', sans-serif;
       color: var(--primary);
     }
+    .copy {
+      font-size: 1em;
+      letter-spacing: 0.5px;
+      line-height: 1.8em;
+      font-weight: 400;
+      font-family: "Crimson Text", serif;
+      // color: var(--primary);
+    }
     .proyect-1 {
       .title {
         font-family: 'Exo', sans-serif;
@@ -178,17 +184,6 @@ export default {
           color: var(--secondary);
           letter-spacing: 0.5px;
           font-family: "Crimson Text", serif;
-        }
-        .copy {
-          font-size: 1em;
-          letter-spacing: 0.5px;
-          line-height: 1.8em;
-          font-weight: 400;
-          font-family: "Crimson Text", serif;
-          // color: var(--primary);
-          .copy-link {
-            color: var(--secondary);
-          }
         }
       }
       .content-right {
@@ -247,6 +242,7 @@ export default {
   }
   .img-fluid {
     width: 100%;
+    height: 100%;
   }
   .line {
     background-color: var(--secondary);
@@ -262,12 +258,14 @@ export default {
     width: 50px;
     top: 0;
   }
-
   .center-x-v {
     right: 50%;
   }
   .center-x-h {
     right: calc(50% - 25px);
+  }
+  .copy-link {
+    color: var(--secondary);
   }
 }
 
