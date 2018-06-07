@@ -67,7 +67,7 @@
           <b-col cols="12">
             <div class="line horizontal-line"></div>
           </b-col>
-          <b-col cols="12 my-4" md="6">
+          <b-col cols="12" md="6" class="my-4">
             <h2 class="title py-3">A Breath of Fresh Hops.</h2>
             <p class="copy">
               There are roughly 150 open breweries in Minnesota today, with such a saturated market, it can be difficult to stand out. But even with those numbers, Indeed continues to grow and expand by staying true to themselves, giving back to the community, and brewing eccentric new beers like; Strawberry Fields Sour Ale, Mexican Honey Imperial Lager, and the barrel aged Rum King Imperial Stout just to name a few.
@@ -114,7 +114,7 @@
           <b-col cols="12">
             <div class="line horizontal-line"></div>
           </b-col>
-          <b-col cols="12 my-4" md="6">
+          <b-col cols="12" md="6" class="my-4">
             <h2 class="title py-3">Thirsty Creatures.</h2>
             <p class="copy">
               While working at Duffy, I had the opportunity to work with the intricate illustrations of Chuck U. Chuck is a local Minneapolis artist who has partnered with Indeed since day 1, his detailed and unique illustration style matches particularly well with the charismatic atmosphere of Indeed. Together, we created a library of creature features for each can, some notable creatures include the bike riding elephant of Let It Ride, the tractor driving squirrel of Yamma Jamma, or the motorcycle riding bear and otter duo of Shenanigans.
@@ -161,10 +161,10 @@
         </b-row>
 
         <b-row class="testimonial py-5">
-          <b-col cols="12 mb-5">
+          <b-col cols="12" class="mb-5">
             <div class="line horizontal-line center-x-h"></div>
           </b-col>
-          <b-col cols="12 text-center">
+          <b-col cols="12" class="text-center">
             <h3 class="title">IN THE PRESS</h3>
             <p class="text my-3 px-lg-5 mx-lg-5">
               <span class="resaltado">“</span>Five years from now I don’t think our accomplishments will be measured in size or growth rate. Rather, I hope people will be talking about how they still love drinking our beer, and can feel good about our company and what we stand for.<span class="resaltado">”</span>
@@ -176,12 +176,14 @@
 
       </b-container>
     </section>
+    <app-footer></app-footer>
   </div>
 </template>
 
 <script>
-
+import AppFooter from '~/components/Footer'
 export default {
+  components: { AppFooter },
   head: {
     title: 'Indeed Brewing Co. - Cody Petts'
   }

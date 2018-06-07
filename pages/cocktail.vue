@@ -55,7 +55,7 @@
           <b-col cols="12">
             <div class="line horizontal-line"></div>
           </b-col>
-          <b-col cols="12 my-4" md="6">
+          <b-col cols="12" md="6" class="my-4">
             <h2 class="title py-3">New Age, Old Fashioned.</h2>
             <p class="copy">Each kit is inspired by a classic cocktail that evokes nostalgia, such as the Old Fashioned, the Dirty Martini, the Absinthe Louche, and so on. So what's included in the kit? Well, each cocktail kit supplies you with all the essential / natural ingredients to craft classic cocktails, just add your favorite alcoholic spirt and enjoy!</p>
           </b-col>
@@ -67,28 +67,28 @@
           <b-col cols="12" md="6" class="pr-md-1">
             <img class="img-fluid" src="~/static/cocktail/cocktail-5.jpg" alt="">
           </b-col>
-          <b-col cols="12 pt-2" md="6" class="pt-2 pl-md-1 pt-md-0">
+          <b-col cols="12" md="6" class="pt-2 pl-md-1 pt-md-0">
             <img class="img-fluid" src="~/static/cocktail/cocktail-6.jpg" alt="">
           </b-col>
-          <b-col cols="12 pt-2 pb-2">
+          <b-col cols="12" class="pt-2 pb-2">
             <img class="img-fluid" src="~/static/cocktail/cocktail-7.jpg" alt="">
           </b-col>
           <b-col cols="12" md="6" class="pr-md-1">
             <img class="img-fluid" src="~/static/cocktail/cocktail-8.jpg" alt="">
           </b-col>
-          <b-col cols="12 pt-2" md="6" class="pt-2 pl-md-1 pt-md-0">
+          <b-col cols="12" md="6" class="pt-2 pl-md-1 pt-md-0">
             <img class="img-fluid" src="~/static/cocktail/cocktail-9.jpg" alt="">
           </b-col>
-          <b-col cols="12 pt-2 pb-2">
+          <b-col cols="12" class="pt-2 pb-2">
             <img class="img-fluid" src="~/static/cocktail/cocktail-10.jpg" alt="">
           </b-col>
           <b-col cols="12" md="6" class="pr-md-1">
             <img class="img-fluid" src="~/static/cocktail/cocktail-11.jpg" alt="">
           </b-col>
-          <b-col cols="12 pt-2" md="6" class="pt-2 pl-md-1 pt-md-0">
+          <b-col cols="12" md="6" class="pt-2 pl-md-1 pt-md-0">
             <img class="img-fluid" src="~/static/cocktail/cocktail-12.jpg" alt="">
           </b-col>
-          <b-col cols="12 pt-2">
+          <b-col cols="12" class="pt-2">
             <img class="img-fluid" src="~/static/cocktail/cocktail-13.jpg" alt="">
           </b-col>
         </b-row>
@@ -99,7 +99,7 @@
           <b-col cols="12">
             <div class="line horizontal-line"></div>
           </b-col>
-          <b-col cols="12 my-4" md="6">
+          <b-col cols="12" md="6" class="my-4">
             <h2 class="title py-3">Cheers Friends.</h2>
             <p class="copy">No happy hour is complete without good friends. I'd like to thank a few of my talented friends that were a part of Cocktail kits; Colin Schye for his extensive web skills, Kelley Mann and Brent Schoepf for their photography prowess, the team at Studio on Fire for their printing expertise, and Justin Durling for his dedication to great work, and for this awesome opportunity.</p>
           </b-col>
@@ -114,10 +114,10 @@
         </b-row>
 
         <b-row class="testimonial py-5">
-          <b-col cols="12 mb-5">
+          <b-col cols="12" class="mb-5">
             <div class="line horizontal-line center-x-h"></div>
           </b-col>
-          <b-col cols="12 text-center">
+          <b-col cols="12" class="text-center">
             <h3 class="title">TESTIMONIAL</h3>
             <p class="text my-3 px-lg-5 mx-lg-5">
               <span class="resaltado">“</span>Cody did an outstanding job designing a visual identity for Cocktail Kits 2 Go. He combined my product idea with his own imagination and skill to create a brand that truly expresses my company. I couldn’t be happier with his work<span class="resaltado">”</span>
@@ -128,12 +128,14 @@
         </b-row>
       </b-container>
     </section>
+    <app-footer></app-footer>
   </div>
 </template>
 
 <script>
-// ~/components/AppLogo.vue
+import AppFooter from '~/components/Footer'
 export default {
+  components: { AppFooter },
   head: {
     title: 'Cocktail Kits - Cody Petts'
   }

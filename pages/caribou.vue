@@ -68,7 +68,7 @@
           <b-col cols="12">
             <div class="line horizontal-line"></div>
           </b-col>
-          <b-col cols="12 my-4" md="6">
+          <b-col cols="12" md="6" class="my-4">
             <h2 class="title py-3">Quality & Sustainability.</h2>
             <p class="copy">
               Being a 100% Rainforest Alliance Certified company is no small feat. Caribou and their amazing like-minded volunteers, work together to research new sustainable practices, help farming communities improve their overall quality of life, and implement water conservation to ensure that clean bodies of water can coexist with the economically viable farms. These volunteers believe in the “Do Good’’ mindset that’s at the heart of Caribou Coffee.
@@ -86,7 +86,7 @@
           <b-col cols="12" md="4" class="pb-2 pb-md-0 pr-md-1">
             <img class="img-fluid" src="~/static/caribou/caribou-9.jpg" alt="">
           </b-col>
-          <b-col cols="12" md="4" class="pl-md-1 pr-md-1">
+          <b-col cols="12" md="4" class="pl-md-1 pr-md-1 pb-2 pb-md-0">
             <img class="img-fluid" src="~/static/caribou/caribou-10.jpg" alt="">
           </b-col>
           <b-col cols="12" md="4" class="pl-md-1">
@@ -95,10 +95,10 @@
         </b-row>
 
         <b-row class="testimonial py-5">
-          <b-col cols="12 mb-5">
+          <b-col cols="12" class="mb-5">
             <div class="line horizontal-line center-x-h"></div>
           </b-col>
-          <b-col cols="12 text-center">
+          <b-col cols="12" class="text-center">
             <h3 class="title">IN THE PRESS</h3>
             <p class="text my-3 px-lg-5 mx-lg-5">
               <span class="resaltado">“</span>This summer I worked in one store, and a guest bought the coffee for the person in line behind her. And then 29 cars in a row bought the coffee for the car behind them. Where else does this happen?<span class="resaltado">”</span>
@@ -110,12 +110,16 @@
 
       </b-container>
     </section>
+    <app-footer></app-footer>
   </div>
 </template>
 
 <script>
-// ~/components/AppLogo.vue
+
+import AppFooter from '~/components/Footer'
+
 export default {
+  components: { AppFooter },
   head: {
     title: 'Caribou Coffee - Cody Petts'
   }

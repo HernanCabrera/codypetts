@@ -36,43 +36,43 @@
           <b-col cols="12" md="8" class="pr-md-1">
             <img class="img-fluid" src="~/static/pine/pine-2.jpg" alt="">
           </b-col>
-          <b-col cols="12 pt-2" md="4" class="pt-2 pl-md-1 pt-md-0">
+          <b-col cols="12" md="4" class="pt-2 pl-md-1 pt-md-0">
             <img class="img-fluid" src="~/static/pine/pine-3.jpg" alt="">
           </b-col>
-          <b-col cols="12 pt-2 pb-2">
+          <b-col cols="12" class="pt-2 pb-2">
             <img class="img-fluid" src="~/static/pine/pine-4.jpg" alt="">
           </b-col>
           <b-col cols="12" md="8" class="pr-md-1">
             <img class="img-fluid" src="~/static/pine/pine-5.jpg" alt="">
           </b-col>
-          <b-col cols="12 pt-2" md="4" class="pt-2 pl-md-1 pt-md-0">
+          <b-col cols="12" md="4" class="pt-2 pl-md-1 pt-md-0">
             <img class="img-fluid" src="~/static/pine/pine-6.jpg" alt="">
           </b-col>
-          <b-col cols="12 pt-2 pb-2">
+          <b-col cols="12" class="pt-2 pb-2">
             <img class="img-fluid" src="~/static/pine/pine-7.jpg" alt="">
           </b-col>
           <b-col cols="12" md="8" class="pr-md-1">
             <img class="img-fluid" src="~/static/pine/pine-8.jpg" alt="">
           </b-col>
-          <b-col cols="12 pt-2" md="4" class="pt-2 pl-md-1 pt-md-0">
+          <b-col cols="12" md="4" class="pt-2 pl-md-1 pt-md-0">
             <img class="img-fluid" src="~/static/pine/pine-9.jpg" alt="">
           </b-col>
-          <b-col cols="12 pt-2 pb-2">
+          <b-col cols="12" class="pt-2 pb-2">
             <img class="img-fluid" src="~/static/pine/pine-10.jpg" alt="">
           </b-col>
           <b-col cols="12" md="8" class="pr-md-1">
             <img class="img-fluid" src="~/static/pine/pine-11.jpg" alt="">
           </b-col>
-          <b-col cols="12 pt-2" md="4" class="pt-2 pl-md-1 pt-md-0">
+          <b-col cols="12" md="4" class="pt-2 pl-md-1 pt-md-0">
             <img class="img-fluid" src="~/static/pine/pine-12.jpg" alt="">
           </b-col>
-          <b-col cols="12 pt-2 pb-2">
+          <b-col cols="12" class="pt-2 pb-2">
             <img class="img-fluid" src="~/static/pine/pine-13.jpg" alt="">
           </b-col>
           <b-col cols="12" md="8" class="pr-md-1">
             <img class="img-fluid" src="~/static/pine/pine-14.jpg" alt="">
           </b-col>
-          <b-col cols="12 pt-2" md="4" class="pt-2 pl-md-1 pt-md-0">
+          <b-col cols="12" md="4" class="pt-2 pl-md-1 pt-md-0">
             <img class="img-fluid" src="~/static/pine/pine-15.jpg" alt="">
           </b-col>
         </b-row>
@@ -83,7 +83,7 @@
           <b-col cols="12">
             <div class="line horizontal-line"></div>
           </b-col>
-          <b-col cols="12 my-4" md="6">
+          <b-col cols="12" md="6" class="my-4">
             <h2 class="title py-3">Into The Wild.</h2>
             <p class="copy">
               Each word constructed in the typeface represents my appreciation of the natural world through various past experiences. Paired alongside each word is either a landscape or memory that ties into the outdoor settings to hopefully evoke a sense of place and emotion.
@@ -97,17 +97,17 @@
         </b-row>
 
         <b-row class="my-5 proyect-2-img">
-          <b-col cols="12 pt-2 pb-2">
+          <b-col cols="12" class="pt-2 pb-2">
             <img class="img-fluid" src="~/static/pine/pine-1.jpg" alt="">
           </b-col>
         </b-row>
 
 
         <b-row class="testimonial py-5">
-          <b-col cols="12 mb-5">
+          <b-col cols="12" class="mb-5">
             <div class="line horizontal-line center-x-h"></div>
           </b-col>
-          <b-col cols="12 text-center">
+          <b-col cols="12" class="text-center">
             <h3 class="title">IN THE PRESS</h3>
             <p class="text my-3 px-lg-5 mx-lg-5">
               <span class="resaltado">“</span>We just love seeing a physical typeface, especially when it's one as beautiful as this. Petts has done an amazing job at presenting this simple yet elegant design, showcasing various letter of the alphabet with the name of a natural element that inspired the font's creation.<span class="resaltado">”</span>
@@ -117,17 +117,16 @@
           </b-col>
         </b-row>
 
-       
-       
-        
-
       </b-container>
     </section>
+    <app-footer></app-footer>
   </div>
 </template>
 
 <script>
+import AppFooter from '~/components/Footer'
 export default {
+  components: { AppFooter },
   head: {
     title: 'Pine Typeface - Cody Petts'
   }

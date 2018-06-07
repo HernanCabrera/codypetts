@@ -3,6 +3,79 @@
   --primary: #333333;
   --secondary: #BB8868;
 }
+.input-routes-enter-active, .input-routes-leave-active {
+  transition: all .5s;
+}
+.input-routes-enter, .input-routes-leave-to /* .fade-leave-active below version 2.1.8 */ {
+  transform: translateY(-100vh);
+}
+.header {
+  position: fixed;
+  z-index: 15;
+  width: 100vw;
+  .menu-box {
+    width: 28px;
+    height: 22px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    cursor: pointer;
+    .bar {
+      width: 100%;
+      height: 2px;
+      background-color: white;
+      transform-origin: 50% 50%;
+      position: relative;
+      transition: .2s;
+      transform: rotate(0deg);
+      top: 0px;
+    }
+  }
+
+  .routes {
+    background-color: rgba(187, 136, 104, 0.9);
+    list-style: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    .route {
+      .route__link {
+        color: white;
+        text-decoration: none;
+        font-family: "Crimson Text", serif;
+        font-size: 25px;
+        font-weight: 400;
+        transition: .3s;
+        cursor: pointer;
+        &:hover {
+          color: #333;
+          &:before {
+            content: '_ '
+          }
+        }
+      }
+    }
+  }
+
+  .menu_active__bar__1 {
+    transform: rotate(45deg) !important;
+    top: 7px !important;
+  }
+  .menu_active__bar__2 {
+    opacity: 0 !important;
+  }
+  .menu_active__bar__3 {
+    transform: rotate(-45deg) !important;
+    top: -7px !important;
+  }
+}
 .home {
   height: 100vh;
   overflow: hidden;
@@ -135,7 +208,43 @@
   color: var(--secondary);
 }
 
-
+.footer {
+  p {
+    padding: 0;
+    margin: 0;
+  }
+  border-top: 1px solid #DEDFDF;
+  .img {
+    width: 20px;
+  }
+  .copyright {
+    color: #bb8868;
+    font-family: 'Exo', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+  }
+  .social__networks {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    .social__network {
+      // margin: 0 10px;
+      .social__network__link {
+        font-family: "Crimson Text", serif;
+        font-weight: 800;
+        font-size: 16px;
+        transition: .3s;
+        text-decoration: none;
+        color: #2F2F2F;
+        &:hover {
+          color: #bb8868;
+        }
+      }
+    }
+  }
+}
 
 @media (max-width: 770px) {
   .cocktail {
