@@ -24,7 +24,7 @@ module.exports = {
       { hid: 'description', name: 'description', content: 'Practicando maquetado de web la web http://codypetts.com/ con nuxt ' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicons.ico' },
+      { rel: 'icon', type: 'image/x-icon', href: 'favicons.ico' },
       { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Crimson+Text:400,400i,700|Exo:400,500,600,700,800,900' }
     ]
   },
