@@ -21,7 +21,18 @@ module.exports = {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'Practicando maquetado de web la web http://codypetts.com/ con nuxt ' }
+      { hid: 'description', name: 'description', content: 'Practicando maquetado de web la web http://codypetts.com/ con nuxt ' },
+      { name: 'twitter:card', content: 'summary' },
+      { name: 'twitter:site', content: 'https://hernancabrera.github.io/codypetts/' },
+      { name: 'twitter:title', content: 'Home - Cody Petts' },
+      { name: 'twitter:description', content: 'Hey there! My name is Cody Petts. I’m a multidisciplinary graphic designer who specializes in brand identity, packaging design, illustration and photography.' },
+      { name: 'twitter:creator', content: 'Cody Petts' },
+      { name: 'twitter:image', content: 'safe_image.jpg' },
+      { property: 'og:title', content: 'A Different Design - Kristof Orts - Freelance web design in Antwerp' },
+      { property: 'og:type', content: 'article' },
+      { property: 'og:url', content: 'https://hernancabrera.github.io/codypetts/' },
+      { property: 'og:image', content: 'safe_image.jpg' },
+      { property: 'og:description', content: 'Hey there! My name is Cody Petts. I’m a multidisciplinary graphic designer who specializes in brand identity, packaging design, illustration and photography.' }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: 'favicons.ico' },
@@ -34,7 +45,7 @@ module.exports = {
   /*
   ** Customize the progress bar color
   */
-  loading: { color: '#3B8070' },
+  loading: { color: '#fff' },
   /*
   ** Build configuration
   */
